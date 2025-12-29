@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>NWRuffle - Nevada Chaos</title>
+  <title>NWRuffle Example</title> <!--nochaos-->
 
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
 
@@ -17,27 +17,6 @@
       font-family: Arial, sans-serif;
       overflow: hidden;
       user-select: none;
-    }
-
-    /* Top bar */
-    .top-link {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 48px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(0, 0, 0, 0.7);
-      z-index: 9999;
-    }
-
-    .top-link a {
-      color: #ff3333;
-      text-decoration: none;
-      font-size: 20px;
-      font-weight: bold;
     }
 
     /* Ruffle area */
@@ -74,17 +53,11 @@
 
 <body>
 
-  <div class="top-link">
-    <a href="test.html">another episode</a>
-  </div>
 
 
   <div id="flash-content"></div>
 
-  <div id="fallback">
-    <div>Ruffle loading...</div>
-    <div>If stuck, try <a href="test.html">another episode</a></div>
-  </div>
+
 
   <script>
     function waitForRuffle(cb) {
@@ -116,3 +89,4 @@
 
 </body>
 </html>
+
